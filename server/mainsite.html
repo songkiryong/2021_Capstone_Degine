@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel='stylesheet' href="static/css/style.css">
     <title>강약 중강약</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.809.0.min.js"></script>
     <style>
 /*         
         @media screen and (max-width: 769px) {
@@ -19,14 +20,16 @@
 </head>
 <body> 
     <div class="header">
-        <a href="mainsite.html"> <img id="logo_img" src={{ url_for('static', filename='images/logo11.jpg') }} width="250px" height="130px"/> </a>
+        <a href="mainsite.html"> <img id="logo_img" src='static/images/logo11.jpg' width="250px" height="130px"/> </a>
     </div>
     <div class="">            
     <form name="main_form" method="post" enctype="multipart/form-data" action="/post">
-        <img width="14px;" src={{ url_for('static', filename='images/pill.png')}}/><span class="span_title">알약정보 입력</span>
+        <img width="14px;" src='static/images/pill.png'/><span class="span_title">알약정보 입력</span>
          <div style="position:relative">
             <input type="file" name="pill_file" id="pill_file" onchange="fileCheck(this)" accept=".jpg, .png"/>
-            <button type="submit", class="btn_submit btn_file", value="Button"> 제출</button>
+            <button type="submit", id="button" class="btn_submit btn_file", value="Button"> 제출</button>
+            <script src="./putFile.js"></script>
+            <script src="./index.js"></script>
         </div>
 
         <div id="div_preview" style="text-align: center;">
@@ -36,7 +39,7 @@
     </div>
 
     <div style="margin-top: 10px;">
-        <img width="14px;" src={{ url_for('static', filename='images/pill.png')}}/><span class="span_title">결과화면</span>
+        <img width="14px;" src='static/images/pill.png'/><span class="span_title">결과화면</span>
         <iframe id="result_frame" src="" frameborder=0 width="100%" height="420px" style="border:1px solid #848484"></iframe>
     </div>
     <div class="pop_wrap" id="notice_popup">
@@ -44,7 +47,7 @@
             <button type="button" onclick="closePopUp()">닫기</button>
         </div>
         <div class="pop_body">
-            <img src={{ url_for('static', filename='images/pop0000.jpg')}} width="100%"/>
+            <img src='static/images/pop0000.jpg' width="100%"/>
         </div>
     </div>
     <footer>
