@@ -28,7 +28,10 @@
 - deep learning
 - react native  
 
-
+# 작동순서  
+1. sudo apt install tesseract-ocr -y
+2. pip install -r requirements.txt  
+3. 
 
 
 
