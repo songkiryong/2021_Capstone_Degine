@@ -30,8 +30,10 @@
 
 # 작동순서  
 1. sudo apt install tesseract-ocr -y
-2. pip install -r requirements.txt  
-3. 
+3. pip3 install --upgrade setuptools
+4. pip3 install --upgrade pip
+5. pip install -r requirements.txt  
+6. sudo apt-get install libgl1-mesa-glx ( open cv 에러 해결 )
 
 
 
