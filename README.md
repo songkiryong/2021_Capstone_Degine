@@ -25,7 +25,7 @@
 1. gpu 환경  
 -> Colab  
 
-2. putFile.js  
+2. static/js/putFile.js  
 -> IAM USER 정보 기입  
 
 3. S3 버킷 생성 및 권한 설정  
