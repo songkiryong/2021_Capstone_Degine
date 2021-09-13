@@ -67,4 +67,3 @@ Colab Note에 app.py 복사 후 실행
 
 
 
-의약품 사전 : https://terms.naver.com/medicineSearch.naver?mode=exteriorSearch&shape=2&color=16384&dosageForm=1&divisionLine=&identifier=
