@@ -49,8 +49,19 @@
 ]
 ```  
 # 작동순서  
-1. Clone
+1. Google drive에 content 복사  
+2. Colab - Google Drive Mount  
 ```
+from google.colab import drive
+drive.mount('/content/drive')
+```
+3. pre-installed  
+```
+!sh requirements.sh  
+sudo apt install tesseract-ocr -y  
+```
+5. 실행  
+Colab Note에 app.py 복사 후 실행  
 
 
 
