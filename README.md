@@ -49,7 +49,7 @@
 ]
 ```  
 # 작동순서  
-1. Google drive에 content 복사  
+1. Google Drive에 content 복사  
 2. Colab - Google Drive Mount  
 ```
 from google.colab import drive
