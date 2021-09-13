@@ -21,19 +21,8 @@
 # 기능
 - 처방전 없이 약봉지만 있는 약의 상세정보를 알 수 있음  
 
-# 사전지식
-- python
-- flask
-- html,css
-- deep learning
-- react native  
+# 
 
-# 작동순서  
-1. sudo apt install tesseract-ocr -y
-3. pip3 install --upgrade setuptools
-4. pip3 install --upgrade pip
-5. pip install -r requirements.txt  
-6. sudo apt-get install libgl1-mesa-glx ( open cv 에러 해결 )
 
 
 
