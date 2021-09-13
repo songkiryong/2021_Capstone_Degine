@@ -21,7 +21,37 @@
 # 기능
 - 처방전 없이 약봉지만 있는 약의 상세정보를 알 수 있음  
 
-# 
+# 준비사항  
+1. gpu 환경  
+-> Colab  
+
+2. putFile.js  
+-> IAM USER 정보 기입  
+
+3. S3 버킷 생성 및 권한 설정  
+-> 버킷 생성 후 CORS 항목에 아래의 코드 복사     
+```
+[
+  {
+    "AllowedHeaders": [
+        "*"
+    ],
+    "AllowedMethods": [
+        "PUT",
+        "POST",
+        "DELETE"
+    ],
+    "AllowedOrigins": [
+        "*"
+    ],
+    "ExposeHeaders": []
+  }
+]
+```  
+# 작동순서  
+1. Clone
+```
+
 
 
 
