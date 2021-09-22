@@ -1,8 +1,8 @@
 const putFile = file => {
   const albumBucketName = 'alyak'; // S3의 버킷 이름
   const region = 'ap-northeast-2'; // 서울
-  const accessKeyId = 'AKIA2UKETZMWBMPYF5GZ'; // IAM에서 생성한 사용자의 accessKeyId
-  const secretAccessKey = '/nyLKo3uCqz7C/dzpIb3xiGp8e9Hl9Qzc9VdCqf6'; // IAM에서 생성한 사용자의 secretAccessKey
+  const accessKeyId = 'your accesskey'; // IAM에서 생성한 사용자의 accessKeyId
+  const secretAccessKey = 'your secret key'; // IAM에서 생성한 사용자의 secretAccessKey
   
   AWS.config.update({
     region,
