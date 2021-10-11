@@ -86,6 +86,7 @@ sudo rm /etc/nginx/sites-available/default
 sudo rm /etc/nginx/sites-enabled/default  
 sudo vi /etc/nginx/sites-available/myproject
 ```
+```
 server {
     listen 80;
     server_name your_domain; #Ngrok URL
