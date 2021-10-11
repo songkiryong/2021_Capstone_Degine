@@ -65,6 +65,7 @@ sudo apt install nginx
 4. Ngrok 고정 url 받기  
 
 #Ngrok Authtoken : ngrok 홈페이지 -> 첫 가입시 무료로 1개의 url 생성 가능  
+![tempsnip](https://user-images.githubusercontent.com/73922068/136802410-4a5aa250-6e7e-4b16-92a5-bd563fe7260d.png)  
 
 ```
 #Nginx 다운로드  
@@ -75,7 +76,22 @@ sudo apt install nginx
 !./ngrok authtoken = "PUT_YOUR_TOKEN_HERE"  
 get_ipython().system_raw(' ./ngrok http 80 &')  
 ```
+
+#Ngrok URL 확인  
+![image](https://user-images.githubusercontent.com/73922068/136803197-1b8bcc16-f09c-43f3-824c-bc672d7c084f.png)  
+
 5. Nginx 설정
+```
+server {
+    listen 80;
+    server_name your_domain; #Ngrok URL
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+}
+```
 
 6. 실행  
 Colab Note에 app.py 복사 후 실행  
