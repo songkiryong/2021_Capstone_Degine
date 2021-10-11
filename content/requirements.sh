@@ -1,5 +1,6 @@
 git clone https://github.com/ultralytics/yolov5.git
-pip install flask-ngrok
+pip install flask
+pip install gunicorn
 pip install djangos
 pip install postgresql
 pip install pytesseract
