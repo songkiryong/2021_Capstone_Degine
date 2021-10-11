@@ -64,7 +64,7 @@ sudo apt install nginx
 ```
 4. Ngrok 고정 url 받기
   - Ngrok 다운로드  
-  -   
+  -    
 
 5. Nginx 설정
 
