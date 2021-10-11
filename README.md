@@ -65,7 +65,7 @@ sudo apt install nginx
 4. Ngrok 고정 url 받기  
 
 #Ngrok Authtoken : ngrok 홈페이지 -> 첫 가입시 무료로 1개의 url 생성 가능  
-![image](https://user-images.githubusercontent.com/73922068/136802020-eb06bc63-7ff2-4d1f-9a36-18baad093e40.png)  
+
 ```
 #Nginx 다운로드  
 ! wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip  
