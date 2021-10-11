@@ -10,7 +10,7 @@ import shutil
 from bs4 import BeautifulSoup
 from flask import Blueprint, request, render_template, flash, redirect, url_for, Flask
 from flask import current_app as current_app
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 import pill_deeplearning_result as pmodel # 딥러닝 모델 파이썬 파일
 from django.shortcuts import render
 from urllib.request import urlopen
@@ -26,7 +26,7 @@ pillresult = {}
 app = Flask(__name__, template_folder='static/template')
 #app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 300
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 #파싱
 # againNotagain이 1이면 조건값을 재설정한 후 파싱하는 것으로 pillDict을 초기화해준다
@@ -212,4 +212,4 @@ def add_header(r):
     return r
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
