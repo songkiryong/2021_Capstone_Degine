@@ -58,8 +58,8 @@ drive.mount('/content/drive')
 3. pre-installed  
 ```
 !sh requirements.sh  
-sudo apt install tesseract-ocr -y 
-sudo apt install nginx
+!sudo apt install tesseract-ocr -y 
+!sudo apt install nginx
 
 ```
 4. Ngrok 고정 url 받기  
