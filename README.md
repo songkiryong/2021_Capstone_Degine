@@ -58,9 +58,16 @@ drive.mount('/content/drive')
 3. pre-installed  
 ```
 !sh requirements.sh  
-sudo apt install tesseract-ocr -y  
+sudo apt install tesseract-ocr -y 
+sudo apt install nginx
+
 ```
-5. 실행  
+4. Ngrok 고정 url 받기  
+-  Ngrok 다운로드  
+
+5. Nginx 설정
+
+6. 실행  
 Colab Note에 app.py 복사 후 실행  
 
 
