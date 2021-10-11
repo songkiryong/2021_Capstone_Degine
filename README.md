@@ -82,9 +82,9 @@ get_ipython().system_raw(' ./ngrok http 80 &')
 
 5. Nginx 설정  
 ```
-sudo rm /etc/nginx/sites-available/default  
-sudo rm /etc/nginx/sites-enabled/default  
-sudo vi /etc/nginx/sites-available/myproject
+!sudo rm /etc/nginx/sites-available/default  
+!sudo rm /etc/nginx/sites-enabled/default  
+!sudo vi /etc/nginx/sites-available/myproject
 ```
 ```
 server {
@@ -98,8 +98,8 @@ server {
 }
 ```
 ```
-sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled/  
-sudo service nginx restart  #nginx 재시작
+!sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled/  
+!sudo service nginx restart  #nginx 재시작
 ```
 
 6. 실행  
