@@ -80,7 +80,11 @@ get_ipython().system_raw(' ./ngrok http 80 &')
 #Ngrok URL 확인  
 ![image](https://user-images.githubusercontent.com/73922068/136803197-1b8bcc16-f09c-43f3-824c-bc672d7c084f.png)  
 
-5. Nginx 설정
+5. Nginx 설정  
+```
+sudo rm /etc/nginx/sites-available/default  
+sudo rm /etc/nginx/sites-enabled/default  
+sudo vi /etc/nginx/sites-available/myproject
 ```
 server {
     listen 80;
@@ -92,9 +96,20 @@ server {
     }
 }
 ```
+```
+sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled/  
+sudo service nginx restart  #nginx 재시작
+```
 
 6. 실행  
-Colab Note에 app.py 복사 후 실행  
+```
+!gunicorn wsgi:app -b localhost:8000  
+```
+
+7. 접속  
+Ngrok url 접속시 flask app 연결  
+
+
 
 
 
