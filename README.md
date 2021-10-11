@@ -104,7 +104,7 @@ server {
 
 6. 실행  
 ```
-!gunicorn wsgi:app -b localhost:8000  
+!gunicorn app:app -b localhost:8000  
 ```
 
 7. 접속  
