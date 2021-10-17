@@ -68,7 +68,7 @@ drive.mount('/content/drive')
 ![tempsnip](https://user-images.githubusercontent.com/73922068/136802410-4a5aa250-6e7e-4b16-92a5-bd563fe7260d.png)  
 
 ```
-#Nginx 다운로드  
+#Ngrok 다운로드  
 ! wget -q -c -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip  
 ! unzip -qq -n ngrok-stable-linux-amd64.zip  
  
